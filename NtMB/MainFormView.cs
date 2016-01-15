@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace NtMB
 {
-    public partial class Form1 : Form
+    public partial class MainFormView : Form
     {
-        public Form1()
+        public MainFormView()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Location = Settings.WindowPositionMain;
         }
     }
 }
