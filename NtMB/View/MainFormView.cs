@@ -29,5 +29,11 @@ namespace NtMB.View
             this.Width = Settings.WindowMainWidth;
             this.Height = Settings.WindowMainHeight;
         }
+
+        //called every time position or visibility of any component is changed
+        private void RearangeFormComponents()
+        {
+
+        }
     }
 }

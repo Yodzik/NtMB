@@ -7,6 +7,7 @@ namespace NtMB.View
 {
     public interface IMainView
     {
+        //set window parameters from Settings class
         void RelocateMainWindow();
     }
 }
