@@ -1,4 +1,4 @@
-﻿namespace NtMB
+﻿namespace NtMB.View
 {
     partial class MainFormView
     {
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FormMain
+            // MainFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 670);
-            this.Name = "FormMain";
+            this.ClientSize = new System.Drawing.Size(992, 570);
+            this.Name = "MainFormView";
             this.Text = "NtMB";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainFormView_Load);
             this.ResumeLayout(false);
 
         }
