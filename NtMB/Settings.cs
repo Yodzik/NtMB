@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
-//using System.Windows;
 
 namespace NtMB
 {
     public static class Settings
     {
+        public static readonly Size WIN_MAIN_SIZE_MAX = new Size(250, 1080);
+        public static readonly Size WIN_MAIN_SIZE_MIN = new Size(250, 600);
         //Path values
         public static string DirectoryPath { get; private set; }
         public static string FilePathSettings { get; private set; }
@@ -30,7 +31,7 @@ namespace NtMB
         {
             DirectoryPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase);
             FilePathSettings = Settings.DirectoryPath + @"\Settings.xml";
-            WindowMainHeight = 700;
+            WindowMainHeight = 600;
             WindowMainWidth = 250;
             ScreenResolution = new Point(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height);
             WindowPositionMain = new Point(ScreenResolution.X - WindowMainWidth, 0);
